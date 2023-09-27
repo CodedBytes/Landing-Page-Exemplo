@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <h1>Logo</h1>
+            <ul>
+                <li class="active"><a href="#home">home</a></li>
+                <li><a href="#info"">serviços</a></li>
+                <li><a href="#about"">sobre</a></li>
+                <li><a href="#contact"">contato</a></li>
+            </ul>
+            <a href="javascript:activateMenu();" class="mobile-menu"><i class="fa-solid fa-bars fa-2x"></i></a>
+
+            <div class="mobile-nav"  id="nav-mobile">
+                <ul>
+                    <li class="active"><a href="#home" onclick="activateMenu();">home</a></li>
+                    <li><a href="#info" onclick="activateMenu();">serviços</a></li>
+                    <li><a href="#about" onclick="activateMenu();">sobre</a></li>
+                    <li><a href="#contact" onclick="activateMenu();">contato</a></li>
+                </ul><!-- Mobile navbar -->
+            </div>
+        </nav><!-- Navbar -->
+    </header><!-- header -->
+    
+    <main>
+        <section class="banner" id="home">
+            <div class="right-info">
+                <h1>Sistemas próprios para empresas autênticas</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vivamus venenatis eros nec purus gravida, ultrices bibendum dui pharetra.</p>
+            </div>
+        </section><!-- Main Banner -->
+        
+        <section class="info" id="info">
+                <div class="left-info">
+                    <h1>Desenvolvemos sistemas únicos</h1>
+
+                    <p>Para todas as plataformas e diversos segmentos:</p>
+                    <ul>
+                        <li>Lojas virtuais</li>
+                        <li>Sites industriais</li>
+                        <li>Sistemas corporativos</li>
+                        <li>Muitos outros</li>
+                    </ul>
+
+                    <button>Entre em contato</button>
+                </div><!-- Left info -->
+
+                <img src="./imgs/phones.png" alt=""/>
+        </section><!-- info -->
+
+        <section class="about" id="about">
+            <h1>Desenvolvido por pessoas e para pessoas</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis eros nec purus gravida, 
+                ultrices bibendum dui pharetra. Ut eget tortor ullamcorper, pharetra erat sed, semper ex. 
+                Mauris suscipit nibh fringilla metus faucibus mattis. Pellentesque sit amet enim nisi. 
+                Quisque vehicula euismod elit eu aliquam.
+            </p>
+
+            <img src="./imgs/program-window.png" alt="" />
+
+            <div class="sub-container">
+                <div class="left-container">
+                    <h1>Nosso time</h1>
+    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis eros nec purus gravida, 
+                        ultrices bibendum dui pharetra. Ut eget tortor ullamcorper, pharetra erat sed, semper ex.</p>
+                </div><!-- left container -->
+    
+                <div class="right-container">
+                    <div class="slider">
+                        <div class="content">
+                            <img src="./imgs/1694974652715.jfif" alt=""/>
+                            <h1>João Victor</h1>
+                            <h3>Desenvolvedor front-end / Back-End</h3>
+        
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vivamus venenatis eros nec purus gravida, ultrices bibendum dui pharetra.</p>
+                        </div>
+
+                        <div class="content">
+                            <img src="./imgs/1694974652715.jfif" alt=""/>
+                            <h1>João Victor</h1>
+                            <h3>Desenvolvedor front-end / Back-End</h3>
+        
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vivamus venenatis eros nec purus gravida, ultrices bibendum dui pharetra.</p>
+                        </div>
+                    </div><!-- Slider -->
+                </div><!-- right container -->
+            </div><!-- Flex sub container -->
+        </section><!-- About -->
+
+        <section class="contact" id="contact">
+            <div class="form">
+                <h1>Entre em contato</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus venenatis eros nec purus gravida, ultrices bibendum dui pharetra.</p>
+
+                <form action="">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required/>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required/>
+                    <textarea name="txtarea" id="txtarea" cols="30" rows="10" placeholder="testre" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div><!-- Contact form -->
+
+            <div class="map">
+                <h1>Faça uma visita!</h1>
+
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="370" height="320" id="gmap_canvas" src="https://maps.google.com/maps?q=rua%20teodoro%20sampaio,%20sao%20paulo%20-%20sp&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://123movies-i.net"></a><br>
+                        <style>.mapouter{position:relative;text-align:right;height:320px;width:370px;}</style>
+                        <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                        <style>.gmap_canvas {overflow:hidden;background:none!important;height:320px;width:370px;}</style>
+                    </div>
+                </div><!-- map -->
+            </div><!-- Google maps map -->
+        </section><!-- Contact -->
+    </main><!-- Page -->
+
+    <footer>
+        <p>admin@codedbytes.fake.com / (11) 1234-5678</p>
+        <p>Feito por pessoas para pessoas</p>
+    </footer><!-- footer -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+
+    <!-- Slick carrousel snippet -->
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 650,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                pauseOnHover:false,
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            autoplay: true,
+                            pauseOnHover:false,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <!-- Scroll navbar -->
+    <script>
+        window.onscroll = function() {
+            console.log(window.pageYOffset);
+            var nav = document.getElementById('navbar');
+            if ( window.pageYOffset > 50 ) {
+                nav.classList.add("visible");
+            } else {
+                nav.classList.remove("visible");
+            }
+        }
+
+        function activateMenu()
+        {
+            var nav = document.getElementById('nav-mobile');
+            nav.classList.toggle("nav-active");
+        }
+    </script>
+</body>
+</html>
