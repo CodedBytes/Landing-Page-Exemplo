@@ -1,5 +1,8 @@
+<div align="center">
 <img src="/slick.png" width="100px"> <br>
 url : https://kenwheeler.github.io/slick/
+</div>
+
 
 ## Sobre
 
